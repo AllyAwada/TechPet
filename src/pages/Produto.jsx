@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const Produto = () => {
   const slides = [
@@ -60,7 +61,9 @@ const Produto = () => {
         <iframe className='mt-4' width="370" height="225" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div className='flex justify-center'>
-        <a href="/pecas" className=" bg-backgroundMenu800 rounded-full text-frase text-sm font-bold py-2 px-4 my-4 ">Veja as Peças</a>
+        <Link to="/pecas" className="flex items-center text-titulo text-xl font-bold">
+          <button className=" bg-backgroundMenu800 rounded-full text-frase text-sm font-bold py-2 px-4 my-4 ">Veja as Peças</button>
+        </Link>
       </div>
     </section>
   );
