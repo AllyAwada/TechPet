@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
           <p className="text-frase text-sm  w-1/2  ml-6 font-bold // xl:text-2xl xl:ml-28 2xl:text-3xl">Venha conhecer a inovação da TechPet para a saúde e bem-estar do seu pet!</p>
         </div>
         <div className="absolute inset-0 flex items-center">
-          <a href="/Produto" className="bg-backgroundMenu800 py-2 px-4 rounded-full text-frase text-sm ml-6 mt-28 font-bold xl:text-1xl xl:ml-28 2xl:text-xl 2xl:-mb-8">Saiba Mais</a>
+          <Link to="/produto" className="flex items-center text-titulo text-xl font-bold">
+            <button className="bg-backgroundMenu800 py-2 px-4 rounded-full text-frase text-sm ml-6 mt-28 font-bold xl:text-1xl xl:ml-28 2xl:text-xl 2xl:-mb-8">Saiba Mais</button>
+          </Link>
         </div>
         <img className="block w-full h-auto" src="dog.png" alt="Imagem de cachorro" />
 
@@ -29,7 +32,9 @@ const Home = () => {
           </div>
           <div>
             <p className='text-paragrafo xl:text-lg' >Explore os dados científicos mais recentes e relevantes para o nosso projeto.</p>
-            <a href="/Referencias" className="flex justify-center bg-backgroundMenu800 rounded-full text-frase text-sm font-bold py-2 px-4 mt-4 mb-2 xl:w-32">Referências</a>
+            <Link to="/Referencias" className="flex items-center text-titulo text-xl font-bold">
+              <button className="flex justify-center bg-backgroundMenu800 rounded-full text-frase text-sm font-bold py-2 px-4 mt-4 mb-2 xl:w-32">Referências</button>
+            </Link>
           </div>
         </div>
       </section>
