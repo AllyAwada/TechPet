@@ -17,7 +17,7 @@ export default {
       backgroundMenu700: 'rgb(55 65 81)',
       textMenu400: 'rgb(156 163 175)',
       hoverTitulo: '#ffd7ba',
-      textWhite: 'rgb(255 255 255)',
+      textWhite: '#fff',
     },
   },
   plugins: [],

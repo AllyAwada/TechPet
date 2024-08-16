@@ -14,7 +14,21 @@ const Home = () => {
             <button className="bg-backgroundMenu800 py-2 px-4 rounded-full text-frase text-sm ml-6 mt-28 font-bold xl:text-1xl xl:ml-28 2xl:text-xl 2xl:-mb-8">Saiba Mais</button>
           </Link>
         </div>
-        <img className="block w-full h-auto" src="dog1.png" alt="Imagem de cachorro" />
+        <div>
+          {/* Imagem para desktop */}
+          <img
+            src="dog1.png"
+            alt="Imagem para Desktop"
+            className="hidden md:block w-full h-auto"
+          />
+
+          {/* Imagem para mobile */}
+          <img
+            src="dog.png"
+            alt="Imagem para Mobile"
+            className="block md:hidden w-full h-auto"
+          />
+        </div>
 
       </section>
 
