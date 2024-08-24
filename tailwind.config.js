@@ -11,6 +11,10 @@ export default {
       subtitulo: '#316f95',
       paragrafo: '#755f57',
       frase:'#eeeeee',
+      insta: '#684B2E',
+
+
+      fundo: '#2C1F11',
       background: '#E2D8CE',
       backgroundGray: '#1c1c1c',
       backgroundMenu800: 'rgb(31 41 55)',
