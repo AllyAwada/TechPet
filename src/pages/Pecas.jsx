@@ -2,70 +2,85 @@ import React, { useState } from 'react';
 
 // Componente para exibir no desktop
 const DesktopPecas = () => (
-    <div className="hidden mt-16 lg:flex lg:flex-col lg:gap-8 lg:p-8">
-        <div className='flex flex-col items-center justify-center text-center my-8'>
-            <h2 className='text-4xl text-titulo font-bold my-4'>TechPet</h2>
-            <img className='w-36' src="2logo.png" alt="" />
-            <p className='text-base'>TechPet: Transformando inovação em soluções criativas para um mundo moderno.</p>
+    <section>
+        <div className="relative mt-16 z-0">
+            <div className='flex flex-col items-center justify-center text-center absolute inset-0'>
+                <h2 className='text-subtitulo text-4xl font-bold '>TechPet</h2>
+                <img className='w-36' src="2logo.png" alt="" />
+                <p className='text-titulo font-semibold xl:text-lg'>TechPet: Transformando inovação em soluções criativas para um mundo moderno.</p>
+            </div>
+            <div>
+                {/* Imagem para desktop */}
+                <img
+                    src="/Pecas/2pecas.png"
+                    alt="Imagem para Desktop"
+                    className="hidden md:block w-full h-auto"
+                />
+
+                {/* Imagem para mobile */}
+                <img
+                    src="/Pecas/1pecas.png"
+                    alt="Imagem para Mobile"
+                    className="block md:hidden w-full h-auto"
+                />
+            </div>
+
         </div>
-        <h2 className='flex justify-center text-2xl text-titulo font-bold mb-4'>| Peças</h2>
-        <div className="flex items-center justify-center">
-            <div className='flex justify-center gap-10 w-1/3 h-8'>
-                <div className="flex flex-col items-center ">
-                    <img
-                        src="arduino.png"
-                        alt="Placa Arduino"
-                        className="w-full sm:w-48 h-auto rounded-md"
-                    />
-                    <h2 className="text-xl font-semibold">Placa Arduino Uno</h2>
-                    <p className="text-base text-center">
-                        Placa de desenvolvimento Arduino Uno com microcontrolador ATmega328. Ideal para projetos de eletrônica e prototipagem.
-                    </p>
-                    <p className="text-lg font-bold">R$ 150,00</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img
-                        src="peltier.png"
-                        alt="Sensor Arduino"
-                        className="w-full sm:w-48 h-auto rounded-md"
-                    />
-                    <h2 className="text-xl font-semibold">Sensor de Temperatura</h2>
-                    <p className="text-base text-center">
-                        Sensor de temperatura para Arduino, com alta precisão e fácil integração em projetos.
-                    </p>
-                    <p className="text-lg font-bold">R$ 60,00</p>
-                </div>
+        <div className="hidden mt-16 lg:flex lg:flex-col lg:gap-8 lg:p-8">
+            <h2 className='flex justify-center text-2xl text-titulo font-bold mb-4'>| Peças</h2>
+            <div className="flex flex-col items-center ">
+                <img
+                    src="/Pecas/arduino.png"
+                    alt="Placa Arduino"
+                    className="w-full sm:w-48 h-auto rounded-md"
+                />
+                <h2 className="text-xl font-semibold">Placa Arduino Uno</h2>
+                <p className="text-base text-center">
+                    Placa de desenvolvimento Arduino Uno com microcontrolador ATmega328. Ideal para projetos de eletrônica e prototipagem.
+                </p>
+                <p className="text-lg font-bold">R$ 150,00</p>
+            </div>
+            <div className="flex flex-col items-center">
+                <img
+                    src="/Pecas/peltier.png"
+                    alt="Sensor Arduino"
+                    className="w-full sm:w-48 h-auto rounded-md"
+                />
+                <h2 className="text-xl font-semibold">Sensor de Temperatura</h2>
+                <p className="text-base text-center">
+                    Sensor de temperatura para Arduino, com alta precisão e fácil integração em projetos.
+                </p>
+                <p className="text-lg font-bold">R$ 60,00</p>
             </div>
         </div>
-
-    </div>
+    </section>
 );
 
 // Componente para exibir no celular
 const MobilePecas = () => {
     const components = [
         {
-            image: 'arduino.png',
+            image: '/Pecas/arduino.png',
             name: 'Arduino Uno',
             description: 'O Arduino Uno é a placa mais popular da família Arduino, ideal para projetos de automação e robótica.'
         },
         {
-            image: 'SERVO MOTOR.png',
+            image: '/Pecas/SERVO MOTOR.png',
             name: 'Servo Motor',
             description: 'O Servo Motor é utilizado para controle preciso de movimento em eixos, ideal para projetos de robótica.'
         },
         {
-            image: 'celula.png',
+            image: '/Pecas/celula.png',
             name: 'Célula de Carga',
             description: 'A Célula de Carga mede força ou peso em um sistema, convertendo em sinal elétrico, amplamente utilizada em balanças eletrônicas.'
         },
         {
-            image: 'bomba.png',
+            image: '/Pecas/bomba.png',
             name: 'Bomba de Água',
             description: 'A Bomba de Água é usada para mover líquidos de um lugar para outro em sistemas automatizados.'
         },
         {
-            image: 'peltier.png',
+            image: '/Pecas/peltier.png',
             name: 'Pastilha Peltier',
             description: 'A Pastilha Peltier é usada para criar uma diferença de temperatura entre suas faces, ideal para projetos de refrigeração.'
         },
@@ -82,25 +97,20 @@ const MobilePecas = () => {
     };
 
     return (
-        <div className="lg:hidden p-4">
-            <div className='flex flex-col items-center justify-center text-center my-8'>
-                <h2 className='text-4xl text-titulo font-bold my-4'>TechPet</h2>
-                <img className='w-36' src="2logo.png" alt="" />
-                <p className='text-base'>TechPet: Transformando inovação em soluções criativas para um mundo moderno.</p>
-            </div>
+        <div className="bg-frase lg:hidden p-4">
             <h2 className='text-2xl text-titulo font-bold mb-4'>| Peças</h2>
             <div className="relative flex flex-col items-center bg-background rounded-lg shadow-lg overflow-hidden">
                 <img
                     src={components[currentIndex].image}
                     alt={components[currentIndex].name}
-                    className="w-full h-52 object-contain"
+                    className="w-full h-52 object-contain p-2"
                 />
                 <div className="p-4 w-full text-center">
                     <h2 className="text-xl font-bold mb-2">{components[currentIndex].name}</h2>
-                    <p className="text-sm">{components[currentIndex].description}</p>
+                    <p className="text-sm text-paragrafo p-2">{components[currentIndex].description}</p>
                 </div>
             </div>
-            <div className="flex justify-between absolute inset-x-0 mt-5 px-4">
+            <div className="flex justify-between inset-x-0 mt-5 px-4">
                 <button
                     onClick={prevSlide}
                     className="p-2 bg-background shadow-lg rounded-full"
