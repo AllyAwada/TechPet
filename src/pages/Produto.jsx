@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Produto = () => {
   const slides = [
     {
-      img: '2lo.png',
+      img: '2lo.png'
     },
     {
       img: 'o.jpg',
