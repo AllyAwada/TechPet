@@ -72,7 +72,7 @@ const Produto = () => {
 
 
       {/* Parte do Produto */}
-      <div className='mx-4 p-6 xl:mx-60 text-justify xl:mx-52 2xl:mx-96'>
+      <div className='mx-4 p-6 xl:mx-60 text-justify 2xl:mx-96'>
         <div className='bg-background my-10 xl:flex xl:items-center xl:justify-between'>
           <div className='xl:flex xl:justify-center pt-6 xl:pt-0'>
             <div className='xl:flex xl:flex-col xl:justify-center'>
@@ -90,8 +90,8 @@ const Produto = () => {
 
         <div className='bg-background xl:flex'>
           <img src="/produto/dog4.png" alt="" />
-          <div className='flex justify-center  xl:items-center'>
-            <iframe className='p-6' width="460" height="270" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div className='flex justify-center items-center xl:w-screen'>
+            <iframe className="p-6" width="500" height="320" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
