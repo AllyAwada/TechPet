@@ -74,7 +74,11 @@ const DesktopPecas = () => {
             <div className="mx-10 mt-10 mb-14 hidden lg:flex lg-items-center lg:flex-col lg:gap-8 lg:p-8">
                 <h2 className='flex justify-center text-2xl text-titulo font-bold mb-20'>| Peças</h2>
                 <div className="relative flex items-center justify-center">
-                    <button onClick={prevSlide} className="bg-background text-primary px-4 py-2 rounded-full absolute left-0 z-10">Prev</button>
+                    <button onClick={prevSlide} className="bg-textMenu400 text-primary px-4 py-2 rounded-full flex items-center justify-center relative z-10">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
                     <div className="flex overflow-hidden space-x-4 gap-5">
                         {products.slice(currentIndex, currentIndex + visibleProducts).map((product, index) => (
                             <Peça
@@ -86,9 +90,14 @@ const DesktopPecas = () => {
                             />
                         ))}
                     </div>
-                    <button onClick={nextSlide} className="bg-background text-primary px-4 py-2 rounded-full absolute right-0 z-10">Next</button>
+                    <button onClick={nextSlide} className="bg-textMenu400 text-primary px-4 py-2 rounded-full flex items-center justify-center relative z-10">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
+
         </section>
     );
 };
@@ -96,16 +105,16 @@ const DesktopPecas = () => {
 // Componente para exibir no celular
 const MobilePecas = () => {
     const components = [
-        { image: "/Pecas/ServoMotor.png", name: "Servo Motor Metálico", description: "Servo motor metálico ideal para projetos de robótica e automação."},
-        { image: "/Pecas/Celula.png", name: "Célula de Carga", description: "Sensor de peso altamente preciso para medições."},
-        { image: "/Pecas/Modulo.png", name: "Módulo HX711", description: "Conversor A/D para sensores de peso."},
-        { image: "/Pecas/Arduino.png", name: "Arduino Uno R3", description: "Placa de desenvolvimento com microcontrolador ATmega328."},
-        { image: "/Pecas/Bluetooth.png", name: "Módulo Bluetooth HC 05", description: "Módulo Bluetooth para comunicação sem fio."},
-        { image: "/Pecas/Rele.png", name: "Módulo Relé", description: "Módulo para controle de dispositivos de alta potência."},
-        { image: "/Pecas/Bateria.png", name: "Bateria 9V", description: "Fonte de energia compacta e portátil."},
-        { image: "/Pecas/Protoboard.png", name: "Protoboard", description: "Placa de prototipagem para montagem de circuitos."},
-        { image: "/Pecas/Jumper.png", name: "Jumpers", description: "Fios para conexões em protoboards."},
-        { image: "/Pecas/Resisitores.png", name: "Resistores", description: "Componentes elétricos para controle de corrente."}
+        { image: "/Pecas/ServoMotor.png", name: "Servo Motor Metálico", description: "Servo motor metálico ideal para projetos de robótica e automação." },
+        { image: "/Pecas/Celula.png", name: "Célula de Carga", description: "Sensor de peso altamente preciso para medições." },
+        { image: "/Pecas/Modulo.png", name: "Módulo HX711", description: "Conversor A/D para sensores de peso." },
+        { image: "/Pecas/Arduino.png", name: "Arduino Uno R3", description: "Placa de desenvolvimento com microcontrolador ATmega328." },
+        { image: "/Pecas/Bluetooth.png", name: "Módulo Bluetooth HC 05", description: "Módulo Bluetooth para comunicação sem fio." },
+        { image: "/Pecas/Rele.png", name: "Módulo Relé", description: "Módulo para controle de dispositivos de alta potência." },
+        { image: "/Pecas/Bateria.png", name: "Bateria 9V", description: "Fonte de energia compacta e portátil." },
+        { image: "/Pecas/Protoboard.png", name: "Protoboard", description: "Placa de prototipagem para montagem de circuitos." },
+        { image: "/Pecas/Jumper.png", name: "Jumpers", description: "Fios para conexões em protoboards." },
+        { image: "/Pecas/Resisitores.png", name: "Resistores", description: "Componentes elétricos para controle de corrente." }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
