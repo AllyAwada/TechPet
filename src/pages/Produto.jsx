@@ -1,21 +1,20 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Produto = () => {
   const slides = [
     {
-      img: '2lo.png'
+      img: 'o.jpg',
+    },
+    {
+      img: '/produto/dog2.jpg', // Imagem para Desktop
     },
     {
       img: 'o.jpg',
     },
     {
-      img: '2lo.png',
+      img: '/produto/dog2.jpg', // Imagem para Mobile
     },
-    {
-      img: 'o.jpg',
-    },
-
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,31 +31,17 @@ const Produto = () => {
 
   return (
     <section className="w-full relative bg-fundo">
-      <div className="relative mt-16 z-0">
-        <div className='flex flex-col items-center justify-center text-center absolute inset-0'>
-          <h2 className='text-subtitulo text-4xl xl:text-6xl font-bold xl:mb-5 uppercase'>Produto</h2>
-          <img className='w-36' src="2logo.png" alt="" />
+      {/* Seção da imagem de fundo */}
+      <div className="relative bg-center bg-cover w-full h-screen" style={{ backgroundImage: "url('/produto/dog1.jpg')" }}>
+        {/* Conteúdo sobre a imagem */}
+        <div className='flex flex-col items-center justify-center text-center absolute inset-0 z-10'>
+          <h2 className='text-titulo text-4xl xl:text-6xl font-bold xl:mb-5 uppercase'>Produto</h2>
+          <img className='w-48' src="2logo.png" alt="" />
           <p className='text-titulo font-semibold mx-10 xl:text-lg'>Transformando inovação em soluções criativas para um mundo moderno.</p>
         </div>
-        <div>
-          {/* Imagem para desktop */}
-          <img
-            src="/produto/dog1.jpg"
-            alt="Imagem para Desktop"
-            className="hidden md:block w-full h-auto"
-          />
-
-          {/* Imagem para mobile */}
-          <img
-            src="/produto/dog2.jpg"
-            alt="Imagem para Mobile"
-            className="block md:hidden w-full h-auto"
-          />
-        </div>
-
       </div>
 
-
+      {/* Conteúdo abaixo da imagem */}
       <h2 className='text-titulo text-2xl font-bold ml-10 my-6 xl:text-4xl xl:mb-10 xl:mx-52 2xl:mx-96'>| Produto</h2>
       <div className="relative w-full flex justify-center mx-auto overflow-hidden rounded-lg">
         <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -69,7 +54,6 @@ const Produto = () => {
           ))}
         </div>
       </div>
-
 
       {/* Parte do Produto */}
       <div className='mx-4 p-6 xl:mx-60 text-justify 2xl:mx-96'>
@@ -88,23 +72,21 @@ const Produto = () => {
                 </Link>
               </div>
             </div>
-            <img className='order-0 w-96' src="/produto/dog3.png" alt="" />
+            <img className='order-0 w-96' src="/produto/dog3.png" alt="Imagem do Produto" />
           </div>
         </div>
 
         <div className='bg-background xl:flex'>
-          <img src="/produto/dog4.png" alt="" />
+          <img src="/produto/dog4.png" alt="Guia de Utilização" />
           <div className='flex flex-col justify-center items-center xl:w-screen'>
             <h2 className='flex justify-center text-titulo text-3xl font-bold xl:text-4xl 2xl:text-5xl xl:mt-8'>| Guia de Utilização</h2>
             <p className='text-paragrafo xl:text-lg px-10 py-6'>
-              Segue um video mostrando como fazer a configuração e o funcionamento do nosso produto.
+              Segue um vídeo mostrando como fazer a configuração e o funcionamento do nosso produto.
             </p>
             <iframe className="p-6" width="500" height="320" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-
-
     </section>
   );
 };

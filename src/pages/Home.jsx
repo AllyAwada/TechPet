@@ -1,43 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
-      {/* Conteúdo acima: Imagem de fundo do cachorro e frase */}
-      <section className="relative pt-16 z-0">
-        <div className="absolute inset-0 flex items-center">
-          <p className="text-frase text-sm  w-1/2  ml-6 font-bold // xl:text-2xl xl:ml-28 xl:w-1/3 2xl:text-3xl">Venha conhecer a inovação da TechPet para a saúde e bem-estar do seu pet!</p>
-        </div>
-        <div className="absolute inset-0 flex items-center">
-          <Link to="/produto" className="flex items-center text-titulo text-xl font-bold">
-            <button className="bg-titulo py-2 px-4 rounded-full text-frase text-sm ml-6 mt-28 font-bold xl:text-1xl xl:ml-28 2xl:text-xl 2xl:-mb-8 hover:bg-subtitulo transition-colors duration-300">
-              Saiba Mais
-            </button>
-          </Link>
+      <div className="relative bg-center bg-cover w-full h-screen" style={{ backgroundImage: "url('/home/dog2.jpg')" }}>
+        <section className="relative flex flex-col justify-center items-center pt-32 z-10 min-h-screen">
+          <div className="flex flex-col items-center">
+            <h2 className="text-titulo text-3xl text-center font-bold xl:text-4xl 2xl:text-5xl">
+              A Tecnologia que Cuida do Seu Pet
+            </h2>
+            <p className="text-frase text-base text-center w-3/4 xl:text-xl xl:w-3/4 2xl:text-2xl">
+              Sempre ao lado do seu pet, oferecendo praticidade  e bem-estar em todos os momentos.
+            </p>
+          </div>
 
-        </div>
-        <div>
-          {/* Imagem para desktop */}
-          <img
-            src="/home/dog2.png"
-            alt="Imagem de um cachorro bebendo agua"
-            className="hidden md:block w-full h-auto"
-          />
-
-          {/* Imagem para mobile */}
-          <img
-            src="/home/dog1.png"
-            alt="Imagem de um cachorro bebendo agua"
-            className="block md:hidden w-full h-auto"
-          />
-        </div>
-
-      </section>
+          <div className="flex items-center justify-center mt-8">
+            <Link to="/produto">
+              <button className="bg-titulo py-2 px-4 rounded-full text-frase text-sm font-medium xl:text-1xl 2xl:text-xl hover:bg-subtitulo transition-colors duration-300">
+                Saiba Mais
+              </button>
+            </Link>
+          </div>
+        </section>
+      </div>
 
       {/* Conteúdo abaixo: Apresentação da empresa TechPet */}
       <section className="bg-background p-1 text-base xl:bg-fundo xl:p-0">
-        <div className="mx-9 pb-2 text-justify xl:mx-52 2xl:mx-96 xl:bg-background xl:p-12">
+        <div className="mx-9 py-8 text-justify xl:mx-52 2xl:mx-96 xl:bg-background xl:py-10 xl:px-44">
           <div>
             <h2 className='text-titulo text-2xl font-bold my-4 xl:text-4xl'>| TechPet</h2>
             <p className='text-paragrafo xl:text-lg'>
@@ -48,17 +38,15 @@ const Home = () => {
             <img className='w-36 xl:w-48' src="2logo.png" alt="logo tech pet" />
           </div>
           <div>
-            <p className='text-paragrafo xl:text-lg' >Explore os dados científicos mais recentes e relevantes para o nosso projeto.</p>
-            <Link to="/Referencias" className="flex items-center text-titulo text-xl font-bold">
-              <button className="flex justify-center bg-titulo rounded-full text-frase text-xl font-bold py-2 mt-4 mb-2 xl:w-32 hover:bg-subtitulo transition-colors duration-300">
+            <p className='text-paragrafo xl:text-lg'>Explore os dados científicos mais recentes e relevantes para o nosso projeto.</p>
+            <Link to="/Referencias">
+              <button className="flex bg-titulo py-2 px-4 mt-4 rounded-full text-frase text-sm font-medium xl:text-1xl 2xl:text-xl hover:bg-subtitulo transition-colors duration-300">
                 Referências
               </button>
             </Link>
-
           </div>
         </div>
       </section>
-
     </div>
   );
 };
