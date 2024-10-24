@@ -86,6 +86,21 @@ const Produto = () => {
             <iframe className="p-6" width="500" height="320" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
+
+        <div className='bg-background my-10 xl:flex xl:items-center xl:justify-between'>
+          <div className='xl:flex xl:justify-center pt-6 xl:pt-0'>
+            <div className='xl:flex xl:flex-col xl:justify-center'>
+              <h2 className='order-1 flex justify-center text-titulo text-3xl font-bold xl:text-4xl 2xl:text-5xl xl:mt-8'>| Jogue e divirta-se!
+              </h2>
+              <p className='order-1 text-paragrafo xl:text-lg px-10 py-6'>Assista a uma breve gameplay de um jogo desenvolvido por nossa equipe.
+              </p>
+              <iframe className="order-1 mx-auto pb-8" width="500" height="320" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            <img className='order-0 w-96 h-auto' src="/produto/dog5.png" alt="Imagem decorativa" />
+          </div>
+        </div>
+
       </div>
     </section>
   );
