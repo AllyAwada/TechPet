@@ -94,8 +94,7 @@ const Produto = () => {
               </h2>
               <p className='order-1 text-paragrafo xl:text-lg px-10 py-6'>Assista a uma breve gameplay de um jogo desenvolvido por nossa equipe.
               </p>
-              <iframe className="order-1 mx-auto pb-8" width="500" height="320" src="https://www.youtube.com/embed/EMiDYIVhpKA?si=0PemOD0xQqz6yvA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+              <iframe className="order-1 mx-auto pb-8" width="500" height="320" src="https://www.youtube.com/embed/RNHrcgtAneU?si=rrY8dksTLT8PKn1H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <img className='order-0 w-96 h-auto' src="/produto/dog5.png" alt="Imagem decorativa" />
           </div>
