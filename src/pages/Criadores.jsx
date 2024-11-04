@@ -9,7 +9,7 @@ const Criadores = () => {
                 <div className='flex flex-col items-center justify-center text-center absolute inset-0 z-10'>
                     <h2 className='text-titulo text-4xl xl:text-6xl font-bold xl:mb-5 uppercase'>Criadores</h2>
                     <img className='w-48' src="2logo.png" alt="" />
-                    <p className='text-titulo font-semibold xl:text-lg'>Transformando inovação em soluções criativas para um mundo moderno.</p>
+                    <p className='text-titulo font-semibold xl:text-lg mx-10'>Transformando inovação em soluções criativas para um mundo moderno.</p>
                 </div>
             </div>
 

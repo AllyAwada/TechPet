@@ -15,7 +15,7 @@ const Qop = () => {
 
             {/* Conteúdo abaixo: Descrição da equipe e objetivos */}
             <section className='bg-fundo'>
-                <div className='mx-4 xl:py-14 p-6 xl:mx-60 text-justify xl:mx-52 2xl:mx-96'>
+                <div className='mx-4 xl:py-14 p-6 xl:mx-60 text-justify 2xl:mx-96'>
                     <div className='bg-background xl:flex'>
                         <img src="/qop/gato2.png" alt="" />
                         <div className='xl:flex xl:flex-col xl:justify-center py-6'>
