@@ -41,7 +41,7 @@ const Produto = () => {
           <div className='flex flex-col justify-center items-center xl:w-screen'>
             <h2 className='flex justify-center text-titulo text-3xl font-bold xl:text-4xl 2xl:text-5xl xl:mt-8 '>| Guia de <br /> Utilização</h2>
             <p className='text-paragrafo xl:text-lg px-10 py-6'>Segue um vídeo mostrando como fazer a configuração e o funcionamento do nosso produto.</p>
-            <iframe className="order-1 mx-auto pb-8 xl:w-10/12 xl:h-80" width="230" height="160" src="https://www.youtube.com/embed/RNHrcgtAneU?si=rrY8dksTLT8PKn1H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe className="order-1 mx-auto pb-8 xl:w-10/12 xl:h-80" width="230" height="160" src="https://www.youtube.com/embed/DEbm57UMPMA?si=3qUVeUa4ZydklAaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
 
